@@ -1,0 +1,23 @@
+#under{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#search{
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #333;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+#under>ul{
+  border: 1px solid #333;
+  width: 300px;
+}
+#list>ul{
+  border: 1px solid #333;
+  width: 600px;
+}
