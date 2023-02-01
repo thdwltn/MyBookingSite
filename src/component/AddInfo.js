@@ -1,13 +1,27 @@
-function AddInfo (){
+
+function formData(value){
+  const date1 = new Date(value);
+  return(
+    `
+    ${date1.getFullYear()}.
+    ${date1.getMonth()+1}.
+    ${date1.getDate()}
+    `
+  )
+}
+
+
+function AddInfo ({appointment,onDeleteAppoint}){
+  
   return(
     <li>
       <dl>
-        <dt>name:</dt>
-        <dd>등록일:</dd>
-        <dd>title:</dd>
-        <dd>내용</dd>
+        <dt>{appointment.people}</dt>
+        <dd>{formData(appointment.date)}</dd>
+        <dd>{appointment.title}</dd>
+        <dd>{appointment.body}</dd>
       </dl>
-      <p><button>delete</button></p>
+      <p><button type="button" onClick={()=> onDeleteAppoint(appointment.id)}>delete</button></p>
     </li>
   )
 }
