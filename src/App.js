@@ -19,7 +19,7 @@ function App() {
     )
   }).sort((a,b)=>{
       return(
-          (sort === 'id' || sort === 'date') ?   a[sort] < b[sort] ? -1 : 1 : a[sort].toLowerCase() < b[sort].toLowerCase() ? -1 : 1 
+          (sort === 'id' || sort === 'date') ?   a[sort] > b[sort] ? -1 : 1 : a[sort].toLowerCase() < b[sort].toLowerCase() ? -1 : 1 
         )
     });
 

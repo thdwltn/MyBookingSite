@@ -20,6 +20,7 @@ function AddInfo ({appointment,onDeleteAppoint}){
         <dd>{formData(appointment.date)}</dd>
         <dd>{appointment.title}</dd>
         <dd>{appointment.body}</dd>
+
       </dl>
       <p><button type="button" onClick={()=> onDeleteAppoint(appointment.id)}>delete</button></p>
     </li>

@@ -49,7 +49,7 @@ function AddAppointment ({onSendAppointment,lastId}){
       people : formData.people,
       date : formData.date,
       title : formData.title,
-      body : formData.body
+      body : formData.body,
     };
     // console.log(formData.date);
     onSendAppointment(appointmentInfo);

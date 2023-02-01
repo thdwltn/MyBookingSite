@@ -10,7 +10,7 @@ function DropDown({toggleSort,sort,onSortChange}){
       <li onClick={()=> onSortChange('people')}>이름순
       {(sort === 'people') && <BiCheck/>}
       </li>
-      <li onClick={()=> onSortChange('date')}>날짜순
+      <li onClick={()=> onSortChange('date')}>최신순
       {(sort === 'date') && <BiCheck/>}
       </li>
       <li onClick={()=> onSortChange('title')}>숙소명순
@@ -27,11 +27,11 @@ function Search ({query,onQueryChange,sort,onSortChange}){
   return(
     <div id="search">
       <div>
-        <BiSearch />
-        <input  type="text" placeholder="검색어 입력" value={query}
-                onChange={(e)=>{onQueryChange(e.target.value)}}/>
+       
+        <input  type="text" placeholder="검색어 입력" value={query2}
+                onChange={(e)=>{setQuery2(e.target.value)}}/>
         <button type="button" className="src"
-                onClick={()=>{onQueryChange(query2)}}>검색</button>
+                onClick={()=>{onQueryChange(query2)}}><BiSearch /></button>
 
         <button type="button" className="arr"
                 onClick={()=> setToggleSort(!toggleSort)}

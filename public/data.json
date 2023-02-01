@@ -4,7 +4,8 @@
     "people": "bbpet01",
     "date":1027954800000,
     "title": "sunt aut facere repellat provident occaecati excepturioptio reprehenderit",
-    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+    "image" : "./img/hotel1.jpg" 
   },
   {
     "id" : "2",
